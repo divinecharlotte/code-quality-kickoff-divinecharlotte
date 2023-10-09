@@ -5,13 +5,10 @@
  */
 
 // FUNCTION 1
-export default function cntRbt(ls) {
-  var cnt = 0;
-  for (var i = 0; i < ls.length; i++) {
-    if (ls[i] == "R") {
-      cnt++;
-    }
+export default function cntRbt(arr) {
+  let count = 0;
+  for (let i of arr) {
+    if (i == "R") { count++ }
   }
-  return cnt;
+  return count;
 }
-// c;
