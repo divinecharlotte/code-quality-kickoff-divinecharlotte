@@ -12,26 +12,15 @@ export default function isValidPassword(password = "") {
   if (forbiddenPasswords.includes(password)) return false
   
   if (password.length !== 10) return false
-  
+  //regex to check if password is made up of  numbers only
   if (password.match(/^[1-9]+$/)) return false
-  
+  //regex to check if password is made up of  characters only
   if (password.match(/^[a-z]+$/gi)) return false
-  
+    //regex to check if password has a @ special characters
   if (password.match(/[!@]/gi))  return false
-  
+    //regex to check if password contains lower and upper case characters 
   if (!password.match(/(?=.*[A-Z])(?=.*[a-b])[A-Za-z]+/g))  return false
   
-
-  // * * * YOUR CODE GOES IN HERE ... * * *
-  /*
-   * if (password is not exactly 10 digits or characters...) {
-   *   return ...;
-   * }
-   *
-   * if (is not composed by digits and numbers) {
-   *   return ...;
-   * }
-   */
   const setOfPassword = new Set([...password]);
   if (setOfPassword.size < 4) return false;
   return true;
