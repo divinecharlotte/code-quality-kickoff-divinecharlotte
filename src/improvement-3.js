@@ -7,7 +7,6 @@
 // FUNCTION 3
 export default function findLargestNumber(numbers) {
 
-  numbers.sort((a, b) => b - a
-  )
+  numbers.sort((a, b) => b - a)
   return numbers[0];
 }
