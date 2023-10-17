@@ -5,7 +5,7 @@
  */
 
 // FUNCTION 1
-export default function cntRbt(arr) {
+export default function countRs(arr) {
   let count = 0;
   for (let i of arr) {
     if (i == "R") { count++ }
