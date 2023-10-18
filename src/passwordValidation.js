@@ -19,7 +19,7 @@ export default function isValidPassword(password = "") {
     //regex to check if password has a @ special characters
   if (password.match(/[!@]/gi))  return false
     //regex to check if password contains lower and upper case characters 
-  if (!password.match(/(?=.*[A-Z])(?=.*[a-b])[A-Za-z]+/g))  return false
+  if (!(/(?=.*[A-Z])(?=.*[a-b])[A-Za-z]+/g).test(password))  return false
   
   const setOfPassword = new Set([...password]);
   if (setOfPassword.size < 4) return false;
