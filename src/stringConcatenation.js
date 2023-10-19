@@ -4,4 +4,4 @@ function joinStrings(string1, string2){
    string2.toString()}
    return `${string1} ${string2}`
  }
- console.log( joinStrings(true,'false'));
+ console.log( joinStrings([1],[1]));
