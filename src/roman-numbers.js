@@ -11,19 +11,19 @@ function solution (roman) {
  };
 
  let result = 0;
- let prevValue = 0;
+ let previousValue = 0;
 
- for (let i = roman.length - 1; i >= 0; i--) {
-   const currentChar = roman[i];
+ for (let index = roman.length - 1; index >= 0; index--) {
+   const currentChar = roman[index];
    const currentValue = romanNumerals[currentChar];
 
-   if (currentValue < prevValue) {
+   if (currentValue < previousValue) {
      result -= currentValue;
    } else {
      result += currentValue;
    }
 
-   prevValue = currentValue;
+   previousValue = currentValue;
  }
 
  return result;

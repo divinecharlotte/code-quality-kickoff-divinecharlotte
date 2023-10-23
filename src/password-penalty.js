@@ -17,5 +17,5 @@ export default function penaltyPoints(password = "") {
 
  if(!newPassword ) return 0
 
-  return newPassword.reduce((count, curr) => count + (curr.length > 2 ? 2 : 1), 0)
+  return newPassword.reduce((count, current) => count + (current.length > 2 ? 2 : 1), 0)
 }
