@@ -5,10 +5,10 @@
  */
 
 // FUNCTION 1
-export default function countRs(arr) {
+export default function countRs(array) {
   let count = 0;
-  for (let i of arr) {
-    if (i == "R") { count++ }
+  for (let index of array) {
+    if (index == "R") { count++ }
   }
   return count;
 }
