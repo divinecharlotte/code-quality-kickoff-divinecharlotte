@@ -1,0 +1,30 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "Exerceise4",
+    "Exercise1",
+    "code-refactor",
+    "ecercise5",
+    "main",
+    "origin",
+    "refactor-password-validation"
+  ],
+  "parent": {
+    "Exerceise4": "main",
+    "Exercise1": "main",
+    "code-refactor": "main",
+    "ecercise5": "main",
+    "main": null,
+    "origin": "main",
+    "refactor-password-validation": "main"
+  },
+  "order": [
+    "main",
+    "Exerceise4",
+    "Exercise1",
+    "code-refactor",
+    "ecercise5",
+    "origin",
+    "refactor-password-validation"
+  ]
+}
